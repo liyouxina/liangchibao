@@ -1,0 +1,20 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/demo/demo",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black"
+    },
+    "navigateToMiniProgramAppIdList": [
+        "wx50742ae1bad8eeb3",
+        "wx51155c5475dc59b4",
+        "wx1071603e37893742",
+        "wx58968ae71fd5528d",
+        "wxf8560c0d585d5843",
+        "wxb5afe96bb7f376cd"
+    ]
+}

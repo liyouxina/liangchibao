@@ -1,0 +1,22 @@
+<view class="container">
+    <view class="dim-area">
+        <!-- <image class="img-logo" mode="widthFix" src="{{logoSrc}}"></image> -->
+        <view class="btn-area" style="margin-top: 60rpx;">
+            <button bindtap="takePhoto" class="btn-style" style="background: #000000;">现拍</button>
+        </view>
+        <view class="btn-area">
+            <button bindtap="choosePhoto" class="btn-style" style="background: #cc787a;">相册</button>
+        </view>
+    </view>
+    <!-- <view class="jike-text" style="padding-bottom:{{bottomLift}}px" wx:if="{{jikeShow}}">
+        <view class="jike-item">
+            <view catchtap="toJike" class="app-item">
+                <image class="jike-logo" mode="widthFix" src="../../images/jike.png"></image>
+                <text>即刻相机</text>
+            </view>
+        </view>
+        <view class="ad-box">
+            <ad unitId="adunit-60b2afe16db835db"></ad>
+        </view>
+    </view> -->
+</view>

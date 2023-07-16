@@ -1,0 +1,85 @@
+.container,page {
+    background-color: #ecebe7;
+}
+
+.firstCanvas {
+    z-index: 99;
+}
+
+.modal-area {
+    align-items: center;
+    background-color: #ecebe7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.dim_modal {
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+
+.dim_input {
+    border: 2rpx solid #000;
+    top: 25%；;
+    z-index: 9999;
+}
+
+.fc {
+    z-index: 100;
+}
+
+.bg,.sc {
+    position: absolute;
+}
+
+.bg {
+    z-index: 10;
+}
+
+.rotateRight {
+    transform: rotate(90deg);
+}
+
+.hide {
+    display: none;
+}
+
+.btn-area {
+    bottom: 0;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.btn-area,.btn-style {
+    display: flex;
+}
+
+.btn-style {
+    align-items: center;
+    border-radius: 10rpx;
+    color: #fff;
+    flex-direction: row;
+    font-size: 36rpx;
+    height: 88rpx;
+    justify-content: center;
+    margin: 56rpx 30rpx;
+    width: 220rpx;
+}
+
+.icon {
+    height: 32rpx;
+    margin-right: 8rpx;
+    width: 32rpx;
+}
+
+.guide_area {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}

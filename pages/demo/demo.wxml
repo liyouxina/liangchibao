@@ -1,0 +1,59 @@
+<view class="container">
+    <view class="modal-area" style="margin-top: {{distance}}px">
+        <view class="dim_modal">
+            <modal bindcancel="cancel2" bindconfirm="confirm" cancelText="{{cancelButton}}" confirmText="{{okButton}}" hidden="{{hiddenmodalput}}" id="modal" title="{{input_title}}">
+                <view>
+                    <radio-group bindchange="dimColorInput">
+                        <radio value="red" color="red" checked="yellow">
+                            <label for="red">红</label>
+                        </radio>
+                        <radio value="yellow" color="yellow">
+                            <label for="yellow">黄</label>
+                        </radio>
+                        <radio value="green" color="green">
+                            <label for="green" >绿</label>
+                        </radio>
+                        <radio value="blue" color="blue">
+                            <label for="blue" >蓝</label>
+                        </radio>
+                        <radio value="black" color="black">
+                            <label for="black" >黑</label>
+                        </radio>
+                        <radio value="purple" color="purple">
+                            <label for="purple" >紫</label>
+                        </radio>
+                    </radio-group>
+                    <radio-group bindchange="dimFontSizeInput">
+                        <radio value="big" checked="small">
+                            <label for="big">大</label>
+                        </radio>
+                        <radio value="middle">
+                            <label for="middle">中</label>
+                        </radio>
+                        <radio value="small">
+                            <label for="small" >小</label>
+                        </radio>
+                    </radio-group>
+                    <input bindinput="dimInput" class="dim_input" cursorSpacing="200" focus="{{input_focus}}" type="{{input_type}}" value="{{input_dim}}" wx:if="{{!hiddenmodalput}}"></input>
+                </view>
+            </modal>
+        </view>
+        <view class="fc" wx:if="{{showCanvas}}">
+            <canvas binderror="error" bindlongtap="tap" bindtouchcancel="cancel" bindtouchend="end" bindtouchmove="move" bindtouchstart="start" canvasId="firstCanvas" class="firstCanvas" disableScroll="true" style="width:{{canvasw}}px;height:{{canvash}}px"></canvas>
+        </view>
+        <image bindload="imageLoad" class="bg {{horzPhoto?'rotateRight':''}} {{img_hide?'hide':''}}" mode="widthFix" src="{{photo}}" style="width:{{imgwidth}}px;height:{{canvash}}px;top: {{distance}}px"></image>
+    </view>
+    <view class="btn-area">
+        <view catchtap="clearClick" class="btn-style" style="background: rgb(0, 0, 0);">
+            <!-- <image class="icon" mode="widthFix" src="../../images/u8.png"></image> -->
+            <text>{{clearButton}}</text>
+        </view>
+        <view catchtap="canvasShare" class="btn-style" id="save_image" style="background: rgba(173, 91, 93, 1);">
+            <!-- <image class="icon" mode="widthFix" src="../../images/u9.png"></image> -->
+            <text>{{saveButton}}</text>
+        </view>
+    </view>
+    <!-- <view catchtap="guide" class="guide_area" wx:if="{{!noFirstLogin}}">
+        <image mode="widthFix" src="{{guideImg}}" style="width:100%;position:absolute;left:0;top:0"></image>
+    </view> -->
+</view>

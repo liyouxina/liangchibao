@@ -1,0 +1,74 @@
+page {
+    background-color: #f4efef;
+    height: 100%;
+}
+
+.container {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.container,.dim-area {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dim-area,.img-logo {
+    width: 100%;
+}
+
+.btn-area {
+    box-sizing: border-box;
+    margin-top: 30rpx;
+    padding: 0 30rpx;
+    width: 84%;
+}
+
+.btn-style {
+    border: none;
+    border-radius: 8rpx;
+    color: #fff;
+    font-size: 32rpx;
+    height: 70rpx;
+    line-height: 64rpx;
+}
+
+.jike-text {
+    color: #000;
+    flex-direction: column;
+    font-size: 24rpx;
+    margin-bottom: 20rpx;
+    text-align: center;
+    width: 80%;
+}
+
+.jike-item,.jike-text {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.jike-item {
+    flex-direction: row;
+    padding-bottom: 30rpx;
+    width: 100%;
+}
+
+.app-item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.jike-logo {
+    padding-bottom: 8rpx;
+    width: 100rpx;
+}
+
+.dim_input {
+    border: 2rpx solid #000;
+    top: 25%；;
+    z-index: 9999;
+}
