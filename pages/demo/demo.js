@@ -115,6 +115,7 @@ Page({
     tap: function(t) {},
     error: function(t) {},
     drawArrow: function(t, a, e, i, n, o, s, r, h) {
+        debugger
         // o = o, s = s, r = r, h = h;
         var l = 180 * Math.atan2(e - n, a - i) / Math.PI;
         var d = (l + o) * Math.PI / 180;

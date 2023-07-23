@@ -34,7 +34,7 @@
                             <label for="small" >小</label>
                         </radio>
                     </radio-group>
-                    <input bindinput="dimInput" class="dim_input" cursorSpacing="200" focus="{{input_focus}}" type="{{input_type}}" value="{{input_dim}}" wx:if="{{!hiddenmodalput}}"></input>
+                    <input bindinput="dimInput" class="dim_input" cursorSpacing="200" focus="{{in6put_focus}}" type="text" value="{{input_dim}}" wx:if="{{!hiddenmodalput}}"></input>
                 </view>
             </modal>
         </view>
